@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Port-Folio - Jlaiel Sami</title>
+    <meta
+      name="description"
+      content="Portfolio de Jlaiel Sami, développeur Full-Stack."
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://befonts.com/montier-font.html" rel="stylesheet" />
+    <script defer src="scripts/app.js"></script>
+
+  </head>
+  <body>
+  <header>
+    <div class="boxed">
+    <div class="flex aligncenter space-between">
+      <a href="/" class="header-logo">
+      <img src="img/logo-hexadigi.png" alt="logo Société"></a>
+      </header></a>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="#about">À propos de moi </a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#portfolio">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+    <header>
+      <div class="slider">
+        <img
+          src="img/slider.jpg"
+          class="slider-background"
+          alt="Image de fond du portfolio"
+        />
+        <div class="slider-content">
+          <h1>Jlaiel Sami - Fondateur d'Hexa-Digi</h1>
+          <h2>Développeur Full-Stack</h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about section">
+        <div class="boxed">
+          <h2>À propos de moi</h2>
+          <p>
+            Issu du secteur bancaire et assurance, en 2025, j'ai décidé de me
+            reconvertir en tant que développeur Full-Stack afin de vivre de ma
+            passion. Je suis passionné par les nouvelles technologies et le
+            développement web.
+          </p>
+          <p>
+            J'ai été diplômé d'une formation de 9 mois en développement web et
+            mobile Chez Odin Project et FreecodeCamp ainsi que diverse formation
+            proposé en ligne. J'ai pu y apprendre les langages HTML, CSS,
+            JavaScript, PHP, ainsi que les frameworks Bootstrap et WordPress.
+          </p>
+          <p>
+            En ce qui concerne la Suite Adobe c'est lors de ma licence
+            professionelle en Marketing Management et Gestion spécialisé en
+            Marketing Digital
+          </p>
+        </div>
+      </section>
+
+      <section class="skills section dark">
+        <div class="boxed text-center">
+          <h2>Découvrez Mes Compétences</h2>
+          <div class="grid-skills">
+            <div class="skill">
+              <img src="img/html-logo.png" alt="HTML" />
+              <h3>HTML</h3>
+            </div>
+            <div class="skill">
+              <img src="img/css-logo.png" alt="CSS" />
+              <h3>CSS</h3>
+            </div>
+            <div class="skill">
+              <img src="img/js-logo.png" alt="JavaScript" />
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+              <img src="img/logo-php.png" alt="PHP" />
+              <h3>PHP</h3>
+            </div>
+            <div class="skill">
+              <img src="img/logo-canva.jpg" alt="Canva" />
+              <h3>Canva</h3>
+            </div>
+            <div class="skill">
+              <img src="img/logo-wordpress.jpg" alt="WordPress" />
+              <h3>WordPress</h3>
+            </div>
+            <div class="skill">
+              <img src="img/logo-photoshop.png" alt="Photoshop" />
+              <h3>Photoshop</h3>
+            </div>
+            <div class="skill">
+              <img src="img/logo-illustrator.png" alt="Illustrator" />
+              <h3>Illustrator</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section">
+        <div class="boxed text-center">
+          <h2>Mes Réalisations</h2>
+          <p>Des Exemples de mes Réalisations</p>
+          <div class="carousel-wrapper">
+  <button class="carousel-prev">❮</button>
+  <div class="carousel-container">
+    <img src="img/exemple-logo.png" alt="Image 1">
+    <img src="img/nos-offres.png" alt="Image 2">
+    <img src="img/Nom de la société.png" alt="Image 3">
+    <img src="img/logo1.png" alt="Image 4">
+    <img src="img/logo3.png" alt="Image 5">
+    <img src="img/logo4.png" alt="Image 6">
+    <img src="img/logo5.png" alt="Image 7">
+    <img src="img/tarif-type.png" alt="Image 8">
+  </div>
+  <button class="carousel-next">❯</button>
+</div>
+  
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+  <h2>Nous Contacter</h2>
+  <a href="mailto:contact.hexadigi@gmail.com" class="contact-btn">Nous Contacter</a>
+  <p>Vous pouvez également nous contacter via le formulaire ci-dessous :</p>
+  <form action="https://formspree.io/f/moqzrylj" method="POST">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Mon Port-Folio | Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

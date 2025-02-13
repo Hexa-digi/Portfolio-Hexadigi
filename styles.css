@@ -1,0 +1,266 @@
+/* Styles généraux */
+body {
+  font-family: Montier, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+#contact {
+  text-align: center;
+  padding: 50px;
+  background: #f9f9f9;
+}
+
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+.contact-btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.contact-btn:hover {
+  background: #0056b3;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+.boxed {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Augmentation de la taille des titres */
+.slider-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+}
+
+.about p {
+  font-size: 2rem;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.slider-background {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Grid des compétences */
+.grid-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  width: 120px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill img {
+  width: 80px;
+  height: auto;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* Carousel */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Empêche les images de dépasser */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container img {
+  width: 40%; /* Réduction de la taille des images */
+  max-width: 400px; /* Taille max pour éviter trop grand */
+  flex-shrink: 0;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section h2,
+.section p {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+/* Menu */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background: #ffffff8a;
+  z-index: 999;
+  box-shadow: 1 1px 25px rgba(0, 0, 0, 0, 0.07);
+}
+.header-logo {
+  display: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f1f1f1ed;
+}
+.header-logo img {
+  width: 200px;
+  height: 100%;
+}
+.alignleft {
+  align-items: center;
+}
+
+.aligncenter {
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #eae9eded;
+  list-style: none;
+}
+.header-menu li {
+  display: inline;
+  text-decoration: floralwhite;
+  padding: 20px;
+  display: block;
+  box-sizing: border-box;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-menu li a:hover {
+  background: #3142dce4;
+}
+.header-logo a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-logo img {
+  width: 150px;
+  height: auto;
+}
